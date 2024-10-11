@@ -10,7 +10,11 @@ public class HashSetCreator {
         for (Integer source : sourceList) {
             if (source%2 == 0) {
                 result.add(source);
-                result.add(source/2);
+                while (source%2 == 0){
+                    source/=2;
+                    result.add(source);
+                }
+
             } else {
                 result.add(source);
                 result.add(source*2);
