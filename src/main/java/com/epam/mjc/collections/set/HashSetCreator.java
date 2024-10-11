@@ -13,7 +13,7 @@ public class HashSetCreator {
                 result.add(source/2);
             } else {
                 result.add(source);
-                result.add(source*3);
+                result.add(source*2);
             }
         }
         return result;
